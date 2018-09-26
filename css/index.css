@@ -1,0 +1,10 @@
+.sec-header{
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #aa3d4d;
+    background-image: url("../img/spoiler.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
