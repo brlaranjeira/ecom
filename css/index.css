@@ -1,10 +1,26 @@
-.sec-header{
+#header-section{
     height: 100vh;
-    min-height: 650px;
+    /*min-height: 650px;*/
     padding-top: 0;
     padding-bottom: 0;
     background-color: #aa3d4d;
     background-image: url("../img/spoiler.png");
     background-position: center;
     background-repeat: no-repeat;
+}
+
+
+
+#div-carousel {
+/*    height: 100vh;
+    min-height: 650px;*/
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.carousel-indicators li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
 }
