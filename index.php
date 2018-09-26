@@ -5,7 +5,6 @@
  * Date: 25/09/18
  * Time: 19:45
  */
-
 ?>
 <!doctype html>
 <html lang="pt-br">
@@ -20,6 +19,9 @@
             padding-top: 0;
             padding-bottom: 0;
             background-color: #aa3d4d;
+            background-image: url("./img/spoiler.png");
+            background-position: center;
+            background-repeat: no-repeat;
         }
     </style>
     <title>Document</title>
@@ -27,7 +29,7 @@
 <body style="margin: 0">
 <div class="container-fluid">
     <header class="sec-header">
-        aa
+
     </header>
     <section>
         asdasdasda
