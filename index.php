@@ -24,7 +24,7 @@
 
 
     <!--CAROUSEL-->
-    <div style="width: 100vw" id="div-carousel" class="m-0 p-0 carousel slide" data-ride="carousel">
+    <div style="width: 100vw" id="div-carousel" class="m-0 p-0 carousel slide carousel-fade" data-ride="carousel">
 
         <ul class="carousel-indicators">
             <li data-target="#div-carousel" data-slide-to="0" class="active"></li>
@@ -32,15 +32,30 @@
             <li data-target="#div-carousel" data-slide-to="2"></li>
         </ul>
 
+        <?php
+        $caption = '<div class="mb-5 pb-5 carousel-caption d-none d-md-block">
+                    <div class="row mx-5 px-5 mb-5">
+                        <div class="col ">
+                            <div class="box">MODA URBANA</div>
+                        </div>
+                        <div class="col ">
+                            <div class="box">FITNESS - PRAIA</div>
+                        </div>
+                    </div>
+                </div>';
+        ?>
         <div class="carousel-inner">
             <div class="carousel-item active" style="">
                 <img class="carousel-image" src="./img/carr-1.jpg" alt="Los Angeles">
+                <?=$caption?>
             </div>
             <div class="carousel-item">
                 <img class="carousel-image" src="./img/carr-2.jpg" alt="Los Angeles">
+                <?=$caption?>
             </div>
             <div class="carousel-item">
                 <img class="carousel-image" src="./img/carr-3.jpg" alt="Los Angeles">
+                <?=$caption?>
             </div>
         </div>
 

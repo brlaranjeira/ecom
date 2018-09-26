@@ -24,3 +24,26 @@
     height: 12px;
     background-color: #404040;
 }
+
+@font-face {
+    font-family: "Brandon-Grot-W01-Light";
+    src: url("../font/Brandon-Grotesque-Light.eot") format("embedded-opentype");
+    src: url("../font/Brandon-Grotesque-Light.ttf") format("truetype");
+    src: url("../font/Brandon-Grotesque-Light.woff") format("woff");
+    /*src: url("../font/Brandon-Grotesque-Light.woff2") format("woff2");*/
+}
+
+.carousel-caption .box {
+    color: #171717;
+    border: #171717 solid 3px;
+    width: 270px;
+    float: none;
+    margin: 0 auto;
+    cursor: pointer;
+    /*padding-bottom: 5px;
+    padding-top: 5px;*/
+    padding: 9px;
+    /*font-family: Brandon-Grot-W01-Light;
+    font-weight: bold;*/
+    font: normal normal 700 22px/1.4em Brandon-Grot-W01-Light,sans-serif;
+}
