@@ -23,26 +23,27 @@
     <section class="m-0 p-0" id="header-section"></section>
 
 
-    <!--CAROUSEL-->
-    <div style="width: 100vw" id="div-carousel" class="m-0 p-0 carousel slide carousel-fade" data-ride="carousel">
+    <!--DESTAQUES-->
 
+    <section id="section-destaques">
+    <div style="width: 100vw" id="div-carousel" class="m-0 p-0 carousel slide carousel-fade" data-ride="carousel">
         <ul class="carousel-indicators">
             <li data-target="#div-carousel" data-slide-to="0" class="active"></li>
             <li data-target="#div-carousel" data-slide-to="1"></li>
             <li data-target="#div-carousel" data-slide-to="2"></li>
         </ul>
-
         <?php
-        $caption = '<div class="mb-5 pb-5 carousel-caption d-none d-md-block">
-                    <div class="row mx-5 px-5 mb-5">
-                        <div class="col ">
-                            <div class="box">MODA URBANA</div>
-                        </div>
-                        <div class="col ">
-                            <div class="box">FITNESS - PRAIA</div>
-                        </div>
+        $caption =
+            '<div class="mb-5 pb-5 carousel-caption d-none d-md-block">
+                <div class="row mx-5 px-5 mb-5">
+                    <div class="col ">
+                        <div class="box">MODA URBANA</div>
                     </div>
-                </div>';
+                    <div class="col ">
+                        <div class="box">FITNESS - PRAIA</div>
+                    </div>
+                </div>
+            </div>';
         ?>
         <div class="carousel-inner">
             <div class="carousel-item active" style="">
@@ -59,13 +60,34 @@
             </div>
         </div>
 
+
+
     </div>
-
-
+        <div id="div-destaques">
+            <div id="destaques-imagens" class="row"></div>
+                <div class="col">
+                    <img class="img-thumbnail rounded mx-auto d-inline-block" src="./img/galeria/1.jpg"/>
+                    <img class="img-thumbnail rounded mx-auto d-inline-block" src="./img/galeria/1.jpg"/>
+                    <img class="img-thumbnail rounded mx-auto d-inline-block" src="./img/galeria/1.jpg"/>
+                </div>
+            <div class="row">
+                <div class="col">
+                    <span style="color: white">VEJA MAIS</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </div>
 </body>
 <script language="ecmascript" type="application/ecmascript" src="./js/jquery.min.js"></script>
 <script language="ecmascript" type="application/ecmascript" src="./js/popper.min.js"></script>
 <script language="ecmascript" type="application/ecmascript" src="./js/bootstrap.min.js"></script>
+<script language="ecmascript" type="application/ecmascript" src="./js/slick.min.js"></script>
+<script>
+    /*$(document).ready(() => {
+        const $img = $('<img src="./img/galeria/1.jpg"></img>');
+        $('#destaques-imagens').append($img);
+    });*/
+</script>
 </html>
