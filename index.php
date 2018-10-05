@@ -25,7 +25,6 @@
 
     <!--DESTAQUES-->
 
-    <section id="section-destaques">
     <div style="width: 100vw" id="div-carousel" class="m-0 p-0 carousel slide carousel-fade" data-ride="carousel">
         <ul class="carousel-indicators">
             <li data-target="#div-carousel" data-slide-to="0" class="active"></li>
@@ -33,49 +32,58 @@
             <li data-target="#div-carousel" data-slide-to="2"></li>
         </ul>
         <?php
-        $caption =
-            '<div class="mb-5 pb-5 carousel-caption d-none d-md-block">
-                <div class="row mx-5 px-5 mb-5">
-                    <div class="col ">
-                        <div class="box">MODA URBANA</div>
+            $caption =
+                '<div class="mb-5 pb-5 carousel-caption d-none d-md-block">
+                    <div class="row mx-5 px-5 mb-5">
+                        <div class="col ">
+                            <div class="box">MODA URBANA</div>
+                        </div>
+                        <div class="col ">
+                            <div class="box">FITNESS - PRAIA</div>
+                        </div>
                     </div>
-                    <div class="col ">
-                        <div class="box">FITNESS - PRAIA</div>
-                    </div>
-                </div>
-            </div>';
+                </div>';
         ?>
         <div class="carousel-inner">
-            <div class="carousel-item active" style="">
-                <img class="carousel-image" src="./img/carr-1.jpg" alt="Los Angeles">
+            <div class="carousel-item active">
+                <img class="carousel-image" src="./img/carr-1.jpg" alt="Los Angeles"/>
                 <?=$caption?>
             </div>
             <div class="carousel-item">
-                <img class="carousel-image" src="./img/carr-2.jpg" alt="Los Angeles">
+                <img class="carousel-image" src="./img/carr-2.jpg" alt="Los Angeles" />
                 <?=$caption?>
             </div>
             <div class="carousel-item">
-                <img class="carousel-image" src="./img/carr-3.jpg" alt="Los Angeles">
+                <img class="carousel-image" src="./img/carr-3.jpg" alt="Los Angeles" />
                 <?=$caption?>
             </div>
         </div>
-
-
-
     </div>
-        <div id="div-destaques">
-            <div id="destaques-imagens" class="row"></div>
-                <div class="col">
-                    <img class="img-thumbnail rounded mx-auto d-inline-block" src="./img/galeria/1.jpg"/>
-                    <img class="img-thumbnail rounded mx-auto d-inline-block" src="./img/galeria/1.jpg"/>
-                    <img class="img-thumbnail rounded mx-auto d-inline-block" src="./img/galeria/1.jpg"/>
-                </div>
-            <div class="row">
-                <div class="col">
-                    <span style="color: white">VEJA MAIS</span>
-                </div>
+
+
+    <div id="div-destaques" class="d-flex flex-column">
+        <div id="destaques-imagens" class="row">
+
+            <div class="col-6 offset-3 d-flex justify-content-around align-items-center">
+                <span class="span-arrow"><</span>
+                <img src="./img/galeria/1.jpg" class="img-fluid img-destaque" alt="">
+                <img src="./img/galeria/2.jpg" class="img-fluid img-destaque" alt="">
+                <img src="./img/galeria/3.jpg" class="img-fluid img-destaque" alt="">
+                <img src="./img/galeria/2.jpg" class="img-fluid img-destaque" alt="">
+                <span class="span-arrow">></span>
+            </div>
+
+        </div>
+        <div class="row" style="flex-grow: 1">
+            <div class="col d-flex justify-content-center">
+                <span class="align-self-baseline px-3 py-1" style=" background-color: #aa3d4d; color: #171717; font: normal normal 700 17px/1.4em brandon-grot-w01-light,sans-serif;">Ver Mais</span>
             </div>
         </div>
+    </div>
+
+    <section id="section-about">
+
+
     </section>
 
 </div>
@@ -83,7 +91,6 @@
 <script language="ecmascript" type="application/ecmascript" src="./js/jquery.min.js"></script>
 <script language="ecmascript" type="application/ecmascript" src="./js/popper.min.js"></script>
 <script language="ecmascript" type="application/ecmascript" src="./js/bootstrap.min.js"></script>
-<script language="ecmascript" type="application/ecmascript" src="./js/slick.min.js"></script>
 <script>
     /*$(document).ready(() => {
         const $img = $('<img src="./img/galeria/1.jpg"></img>');
@@ -91,3 +98,4 @@
     });*/
 </script>
 </html>
+

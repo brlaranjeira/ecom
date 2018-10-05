@@ -17,19 +17,27 @@
     }
 }
 
-#section-destaques {
-    height: 100vh;
-}
+
 
 #div-carousel {
 /*    height: 100vh;
     min-height: 650px;*/
+    height: auto;
     padding-top: 0;
     padding-bottom: 0;
+    overflow: hidden;
+    flex-grow: 4;
 }
 #div-destaques {
     background-color: #171717;
-    height: 33vh;
+    /*background-color: red;*/
+    /*height: 33vh;*/
+    flex-grow: 1;
+}
+
+#destaques-imagens {
+    /*height: 50%;*/
+    /*background-color: green;*/
 }
 
 .carousel-indicators li {
@@ -60,11 +68,29 @@
     border: #171717 solid 3px;
     width: 270px;
     float: none;
-    margin: 0 auto;
+    margin: 3px auto;
     cursor: pointer;
     padding: 9px;
     font: normal normal 700 22px/1.4em Brandon-Grot-W01-Light,sans-serif;
 }
 
+.img-destaque {
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    display: inline-block;
+    margin: auto;
+    border: #aa3d4d 1px solid;
+    /*border-radius: 100px;*/
+}
 
-/* ########################################## */
+.span-arrow {
+    color: #aa3d4d;
+    font-weight: bolder;
+}
+
+#section-about {
+    height: 70vh;
+    background-color: #aa3d4d;
+;
+}
